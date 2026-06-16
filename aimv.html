@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 閃耀 MV 製作 | 重新定義您的視覺敘事</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            z-index: -1;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.4);
+        }
+        /* Portfolio Section */
+        .portfolio-card {
+            border-radius: 0.5rem;
+            overflow: hidden;
+            background: #000;
+            width: 100%;
+            aspect-ratio: 9 / 16;
+        }
+        .portfolio-iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+            pointer-events: none; /* disable interaction */
+        }
+        .portfolio-title {
+            margin-top: 0.5rem;
+            font-weight: 600;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="text-white font-sans">
+
+    <!-- 滿版背景影片 -->
+    <div class="video-container">
+        <video autoplay muted loop playsinline poster="https://i.ytimg.com/vi/LwLXRVJvMN0/maxresdefault.jpg">
+            <source src="https://www.youtube.com/watch?v=LwLXRVJvMN0" type="video/mp4">
+            <!-- 實際應用時建議使用直接影片檔連結，此處以 YouTube iframe 取代顯示 -->
+            <iframe src="https://www.youtube.com/embed/LwLXRVJvMN0?autoplay=1&mute=1&loop=1&playlist=LwLXRVJvMN0&controls=0&showinfo=0&autohide=1" frameborder="0" allowfullscreen class="w-full h-full"></iframe>
+        </video>
+        <div class="overlay absolute top-0 left-0 w-full h-full"></div>
+    </div>
+
+    <!-- 導航列 -->
+    <nav class="fixed w-full p-6 flex justify-between items-center z-10">
+        <div class="text-2xl font-bold tracking-widest">AI MV STUDIOS</div>
+        <div class="space-x-8">
+            <a href="#services" class="hover:text-pink-400 transition">服務項目</a>
+            <a href="#contact" class="bg-pink-600 px-6 py-2 rounded-full hover:bg-pink-500 transition">立即諮詢</a>
+        </div>
+    </nav>
+
+    <!-- 首頁區塊 -->
+    <header class="h-screen flex flex-col justify-center items-center text-center px-4">
+        <h1 class="text-6xl md:text-8xl font-bold mb-6">天生閃耀</h1>
+        <p class="text-xl md:text-2xl mb-10 max-w-2xl">運用頂尖 AI 技術，為您的音樂與品牌量身打造電影級視覺震撼。</p>
+        <a href="#services" class="border-2 border-white px-10 py-4 text-lg hover:bg-white hover:text-black transition duration-300">探索製作方案</a>
+    </header>
+
+    <!-- 服務特色 -->
+    <section id="services" class="py-24 bg-black bg-opacity-60 backdrop-blur-sm">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-16 text-center">為什麼選擇我們？</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="p-8 border border-pink-500 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-pink-400">AI 虛擬替身</h3>
+                    <p>創造如同真人般的絕美演繹，不受拍攝時間與場地限制。</p>
+                </div>
+                <div class="p-8 border border-pink-500 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-pink-400">電影級場景</h3>
+                    <p>利用生成式 AI 構建夢幻場景，每一幀都是視覺藝術品。</p>
+                </div>
+                <div class="p-8 border border-pink-500 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-pink-400">快速迭代製作</h3>
+                    <p>大幅縮短製作流程，以極高的效率完成頂級 MV 製作。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+    <!-- 作品集展示區塊 -->
+    <section id="portfolio" class="py-12 bg-black bg-opacity-60">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-6 text-center">作品集展示</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="flex flex-col items-center">
+                    <div class="portfolio-card w-full mb-3">
+                        <iframe class="portfolio-iframe" src="https://www.youtube.com/embed/h7hM5BlOcMY?autoplay=1&mute=1&loop=1&playlist=h7hM5BlOcMY&controls=0&rel=0&modestbranding=1&playsinline=1" allow="autoplay; encrypted-media" loading="lazy" title="VOBO皮鞋"></iframe>
+                    </div>
+                    <div class="portfolio-title text-center">VOBO皮鞋</div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div class="portfolio-card w-full mb-3">
+                        <iframe class="portfolio-iframe" src="https://www.youtube.com/embed/bcFnNsTVntk?autoplay=1&mute=1&loop=1&playlist=bcFnNsTVntk&controls=0&rel=0&modestbranding=1&playsinline=1" allow="autoplay; encrypted-media" loading="lazy" title="SHARK 鯊克防水鞋"></iframe>
+                    </div>
+                    <div class="portfolio-title text-center">SHARK 鯊克防水鞋</div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div class="portfolio-card w-full mb-3">
+                        <iframe class="portfolio-iframe" src="https://www.youtube.com/embed/n9VTjZdNvEQ?autoplay=1&mute=1&loop=1&playlist=n9VTjZdNvEQ&controls=0&rel=0&modestbranding=1&playsinline=1" allow="autoplay; encrypted-media" loading="lazy" title="黑武士鞋"></iframe>
+                    </div>
+                    <div class="portfolio-title text-center">黑武士鞋</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 聯絡區塊 -->
+    <section id="contact" class="py-24 bg-gradient-to-b from-transparent to-pink-900">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold mb-8">準備好讓您的作品閃耀了嗎？</h2>
+            <p class="mb-10 text-lg">留下聯絡資訊，我們將有專人為您規劃專屬的 AI 影像製作藍圖。</p>
+            <form class="max-w-md mx-auto space-y-4 px-6">
+                <input type="text" placeholder="您的姓名" class="w-full p-3 rounded bg-white bg-opacity-10 border border-white">
+                <input type="email" placeholder="電子郵件" class="w-full p-3 rounded bg-white bg-opacity-10 border border-white">
+                <button class="w-full p-4 bg-pink-600 rounded font-bold hover:bg-pink-500 transition">發送合作需求</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
